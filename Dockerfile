@@ -5,9 +5,6 @@ RUN bash <<EOT
   set -exu -o pipefail
   apt-get update
   apt-get install --yes --no-install-recommends \
-    nala
-  yes | nala fetch --auto -c US -c CA -c MX
-  nala install --assume-yes --no-install-recommends \
     bc \
     build-essential \
     bzr \
